@@ -4,7 +4,7 @@
  * function print last digit
  * Return: value of last didit
  */
-int print_last_digit(int n)
+int print_last_digit(int n);
 {
 int ld = n % 10;
 if (ld < 0)
