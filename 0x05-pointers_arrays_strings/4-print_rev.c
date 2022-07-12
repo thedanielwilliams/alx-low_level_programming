@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+void trim(char *s);
 /**
  * print_rev - Entry function
  * @s: pointer to char
