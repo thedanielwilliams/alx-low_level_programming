@@ -1,20 +1,21 @@
 #include "main.h"
-#include <string.h>
-void trim(char *s);
+
 /**
- * print_rev - Entry function
- * @s: pointer to char
- * Return: 0
- */
+* print_rev -> printing a string in reverse
+* @s: the string to be printed in rev
+*/
+
 void print_rev(char *s)
 {
-int i;
-int size = strlen(s);
-i = size - 1;
-while (i >= 0)
-{
-_putchar(s[i]);
-i--;
-}   
-_putchar('\n');
+	int i, n;
+
+	n = 0;
+	while (s[n] != '\0')
+		n++;
+
+	for (i = n - 1; i >= 0; i--)
+	{
+		_putchar(s[i]);
+	}
+	_putchar('\n');
 }
