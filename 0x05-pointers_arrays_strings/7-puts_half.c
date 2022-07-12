@@ -1,20 +1,21 @@
-#include "main.h"
-#include <stdio.h>
-#include <string.h>
+#include "holberton.h"
+
 /**
- * puts_half - Entry function
- * @str: pointers
- * Return: nothing
+ * puts_half - prints the second half of the string
+ * @str: the string reference
+ * Return: 0
  */
+
 void puts_half(char *str)
 {
-    int half;
-    int size = strlen(str);
-    half = size/2;
+	int i;
 
-    while (str[half] != '\0'){
-        _putchar(str[half]);
-        half++;
-    }
-    _putchar('\n');
+	for (i = 0; str[i] != '\0'; i++)
+		;
+	i++;
+	for (i /= 2; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
